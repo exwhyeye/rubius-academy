@@ -1,2 +1,2 @@
-# rubius-academy
+Ильин Максим
 Репозиторий для курсов Rubius Academy. Осень 2023
