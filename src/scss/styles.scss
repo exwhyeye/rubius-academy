@@ -1,0 +1,90 @@
+@import './_libs';
+@import './_variables';
+@import './components/header/_header';
+@import './components/about/_about';
+@import './components/examples/_examples';
+@import './components/price-and-service/_price-and-service';
+@import './components/masters/_masters';
+@import './components/footer/_footer';
+
+/* General styles */
+
+* {
+  box-sizing: border-box;
+  color: $font-color-primary;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  min-width: 320px;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url("../assets/png/header-bg.png");
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+a:hover {
+  color: $font-color-secondary;
+}
+
+button {
+  border: none;
+  border-radius: 24px;
+  background: #FB9475;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* Custom styles */
+
+/* Обертка, ограничивающая ширину контента */
+.content-wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  padding: 0;
+  margin: 0;
+}
+
+@import './_media';

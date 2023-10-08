@@ -1,0 +1,55 @@
+.masters-section {
+  padding: 80px 0 80px 0;
+  background: #F8F6F7;
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 32px 0 24px 0;
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 30px;
+  }
+}
+
+.master-card {
+  position: relative;
+
+  &__name {
+    margin: 20px 0 8px 0;
+  }
+
+  &__subdesc {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 16px 0 0 0;
+    text-transform: uppercase;
+  }
+
+  &__action {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    width: 255px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    background: rgba(0, 0, 0, 0.0);
+    color: rgba(255, 255, 255, 0.0);
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__action:hover {
+    color: rgba(255, 255, 255, 1.0);
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

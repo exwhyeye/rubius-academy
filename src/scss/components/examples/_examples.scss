@@ -1,0 +1,37 @@
+.example-section {
+  h2 {
+    margin: 0 0 32px 0;
+  }
+}
+
+.example-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 30px;
+}
+
+.example-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+
+  h3 {
+    margin: 20px 0 8px 0;
+  }
+
+  &__desc {
+    margin: 0 0 16px 0;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__button {
+    padding: 10px 20px;
+    width: 112px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+@import './_media';
