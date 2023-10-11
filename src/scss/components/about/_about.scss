@@ -1,0 +1,70 @@
+/* About section */
+
+.about-section {
+  padding: 100px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0;
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* About company */
+
+.about-company-text {
+  max-width: 540px;
+}
+
+.about-company-text .about-company-upper-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.about-company-text .about-company-lower-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.about-company-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 445px;
+  height: 296px;
+  background: url("../assets/png/about-media.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-company-media span {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+/* About service */
+
+.about-service-card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h3 {
+    margin: 20px 0 12px 0;
+  }
+}

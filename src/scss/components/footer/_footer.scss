@@ -1,0 +1,30 @@
+/* Footer */
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.copyrights {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyrights a {
+  color: #278AFF;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.copyrights span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer-content .navigation-list a {
+  font-size: 12px;
+  font-weight: 400;
+}
