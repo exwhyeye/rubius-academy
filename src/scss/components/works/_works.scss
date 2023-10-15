@@ -1,0 +1,116 @@
+.works-section {
+  padding: 100px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 96px;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow-container:hover {
+  background-color: #F8F6F7;
+  border-radius: 50%;
+}
+
+.carousel {
+  height: 372px;
+
+  display: flex;
+  align-items: center;
+  // Св-во safe, насколько я понял, не во всех браузерах поддерживается
+  // Другого решения, чтобы нормально прокручивать карусель, найти не смог =(
+  justify-content: safe center;
+  overflow-x: auto;
+
+  gap: 0 30px;
+  margin: 52px auto 116px auto;
+
+  text-align: center;
+}
+
+.carousel-card {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  max-width: 338px;
+  min-width: 338px;
+  min-height: 338px;
+  max-height: 338px;
+  border-radius: 8px;
+
+  transition: transform .2s;
+
+  &__action {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    opacity: 0;
+    color: #FFF;
+  }
+
+  &__action:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.carousel-card:hover {
+  transform: scale(1.1);
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  &__images-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 40px 0 0 0;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  img {
+    filter: invert(70%);
+  }
+}
+
+@import './_media';

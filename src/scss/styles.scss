@@ -5,6 +5,8 @@
 @import './components/examples/_examples';
 @import './components/price-and-service/_price-and-service';
 @import './components/masters/_masters';
+@import './components/works/_works';
+@import './components/contacts/_contacts';
 @import './components/footer/_footer';
 
 /* General styles */
@@ -52,6 +54,10 @@ h4 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -70,6 +76,12 @@ button {
   cursor: pointer;
 }
 
+input {
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid #D8D8D8;
+}
+
 /* Custom styles */
 
 /* Обертка, ограничивающая ширину контента */
@@ -85,6 +97,26 @@ button {
   gap: 14px 28px;
   padding: 0;
   margin: 0;
+}
+
+.font-xlarge {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-large {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-medium {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.font-small {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @import './_media';

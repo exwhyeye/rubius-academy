@@ -1,27 +1,29 @@
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1280px) {
-  .example-cards-container {
-    justify-content: center;
-  }
-}
+@media only screen and (max-width: 1280px) {}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .example-card {
-    align-items: center;
+  .contacts-section {
+    &__content {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+  }
+
+  .contacts-desc {
     text-align: center;
+
+    &__social-media {
+      justify-content: center;
+    }
   }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .example-card {
-    width: 280px;
-  }
-}
+@media only screen and (max-width: 480px) {}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {}

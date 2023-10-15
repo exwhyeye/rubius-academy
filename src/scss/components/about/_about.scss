@@ -1,70 +1,97 @@
-/* About section */
-
 .about-section {
   padding: 100px 0;
+
+  h2 {
+    margin: 0 0 32px 0;
+  }
 }
 
-.about-wrapper {
+.about-desc {
   display: flex;
-  flex-direction: column;
-  gap: 100px 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 100px 0;
+  gap: 0 24px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 16px 16px;
+  }
+
+  &__upper-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  &__lower-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 50%;
+    height: 296px;
+
+    span {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 6px 0;
+    }
+  }
+
+  &__media-img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+
+  &__media-action {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .about-info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-}
-
-/* About company */
-
-.about-company-text {
-  max-width: 540px;
-}
-
-.about-company-text .about-company-upper-text {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-.about-company-text .about-company-lower-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.about-company-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  gap: 30px 30px;
 
-  width: 445px;
-  height: 296px;
-  background: url("../assets/png/about-media.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  &__card-container {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    padding: 0 25px;
+  }
 
-.about-company-media span {
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 6px 0;
-}
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-/* About service */
-
-.about-service-card {
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    span {
+      line-height: 22px;
+    }
+  }
 
   h3 {
     margin: 20px 0 12px 0;
   }
 }
+
+@import './_media';

@@ -3,8 +3,8 @@
 .price-and-service-section {
   padding: 100px 0 100px 0;
 
-  h2 {
-    margin: 0 0 32px 0;
+  .navigation-list {
+    margin: 58px 0 32px 0;
   }
 }
 
@@ -23,7 +23,6 @@
 .service-cards-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 58px 0 0 0;
   gap: 32px 125px;
 }
 
@@ -31,6 +30,13 @@
   width: calc(50% - 125px);
   display: flex;
   justify-content: space-between;
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__price {
     font-size: 20px;

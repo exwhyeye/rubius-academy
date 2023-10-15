@@ -12,12 +12,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px 30px;
+    gap: 30px 30px;
   }
 }
 
 .master-card {
   position: relative;
+  max-width: 255px;
 
   &__name {
     margin: 20px 0 8px 0;
@@ -30,6 +31,21 @@
     text-transform: uppercase;
   }
 
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   &__action {
     display: flex;
     cursor: pointer;
@@ -40,8 +56,8 @@
     justify-content: center;
     border-radius: 8px;
 
-    background: rgba(0, 0, 0, 0.0);
-    color: rgba(255, 255, 255, 0.0);
+    opacity: 0;
+    color: #FFF;
 
     text-align: center;
     font-size: 14px;
@@ -49,7 +65,9 @@
   }
 
   &__action:hover {
-    color: rgba(255, 255, 255, 1.0);
+    opacity: 1;
     background: rgba(0, 0, 0, 0.5);
   }
 }
+
+@import './_media'
