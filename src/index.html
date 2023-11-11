@@ -16,35 +16,17 @@
     <div class="content-wrapper">
       <div class="header-top">
         <div class="header-top__logo-container">
-          <div class="header-top__burger-container">
-            <a href="#">
-              <img src="./assets/svg/burger-menu.svg" alt="burger-menu.svg">
-            </a>
+          <div class="burger" id="header-burger">
+            <div class="burger__top-line"></div>
+            <div class="burger__middle-line"></div>
+            <div class="burger__bottom-line"></div>
           </div>
           <a href="./index.html" class="header-top__logo">
             Мир красоты
           </a>
         </div>
 
-        <nav>
-          <ul class="navigation-list navigation-list__header">
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Услуги и цены </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Мастера </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Наши работы </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> О нас </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Контакты </a>
-            </li>
-          </ul>
-        </nav>
+        <nav id="header-navigation"></nav>
 
         <div class="contacts">
           <a href="tel:89996663355" class="contacts__phone-number"> 8 (499) 686-17-62 </a>
@@ -71,7 +53,7 @@
   </header>
 
   <main>
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div class="content-wrapper">
         <h2> О салоне </h2>
 
@@ -191,98 +173,13 @@
         </div>
       </div>
     </section>
-    <section class="price-and-service-section">
+    <section id="price-and-service" class="price-and-service-section">
       <div class="content-wrapper">
         <h2> Услуги и цены </h2>
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-link navigation-link_active"> Стрижка и укладка </a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-link"> Косметология </a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-link"> Маникюр и педикюр </a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-link"> Макияж </a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-link"> Брови и ресницы </a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="#" class="navigation-link"> Массаж </a>
-          </li>
-        </ul>
-
-        <div class="service-cards-container">
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Женская стрижка </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Стрижка бороды и усов </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Мужская стрижка </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Экспресс укладка </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Детский Стиль </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Укладка дневная </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Креативный Стиль </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 1200 ₽ </div>
-          </div>
-
-          <div class="service-card">
-            <div class="service-card__desc">
-              <h4> Прическа вечерняя (свадебная) </h4>
-              <span> Короткие волосы </span>
-            </div>
-            <div class="service-card__price"> 3000 ₽ </div>
-          </div>
-        </div>
+        <div id="tabs-manager-container"></div>
       </div>
     </section>
-    <section class="masters-section">
+    <section id="masters" class="masters-section">
       <div class="content-wrapper">
         <h2> Мастера </h2>
         <div class="masters-section__desc"> Дружная команда настоящих профессионалов </div>
@@ -329,58 +226,69 @@
         </div>
       </div>
     </section>
-    <section class="works-section">
-      <div class="works-section__header content-wrapper">
-        <h2> Наши работы </h2>
-        <div class="arrows">
-          <div class="arrow-container">
-            <img src="./assets/svg/arrow-left.svg" alt="arrow-left.svg">
-          </div>
-          <div class="arrow-container">
-            <img src="./assets/svg/arrow-right.svg" alt="arrow-right.svg">
+    <section id="works" class="works-section">
+
+      <div class="content-wrapper">
+        <div class="works-section__header">
+          <h2> Наши работы </h2>
+          <div class="arrows">
+            <div class="arrow-container arrow-left">
+              <img src="./assets/svg/arrow-left.svg" alt="arrow-left.svg">
+            </div>
+            <div class="arrow-container arrow-right">
+              <img src="./assets/svg/arrow-right.svg" alt="arrow-right.svg">
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="carousel">
-        <div class="carousel-card">
-          <div class="carousel-card__action">
-            <div>
-              <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+      <div class="f-carousel" id="myCarousel">
+        <div class="f-carousel__slide" data-fancybox="gallery" data-src="./assets/png/work1.png">
+          <div class="carousel-card">
+            <div class="carousel-card__action">
+              <div>
+                <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+              </div>
+              Увеличить
             </div>
-            Увеличить
+            <img src="./assets/png/work1.png" alt="work1.png">
           </div>
-          <img src="./assets/png/work1.png" alt="work1.png">
         </div>
 
-        <div class="carousel-card">
-          <div class="carousel-card__action">
-            <div>
-              <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+        <div class="f-carousel__slide" data-fancybox="gallery" data-src="./assets/png/work2.png">
+          <div class="carousel-card">
+            <div class="carousel-card__action">
+              <div>
+                <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+              </div>
+              Увеличить
             </div>
-            Увеличить
+            <img src="./assets/png/work2.png" alt="work2.png">
           </div>
-          <img src="./assets/png/work2.png" alt="work2.png">
         </div>
 
-        <div class="carousel-card">
-          <div class="carousel-card__action">
-            <div>
-              <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+        <div class="f-carousel__slide" data-fancybox="gallery" data-src="./assets/png/work3.png">
+          <div class="carousel-card">
+            <div class="carousel-card__action">
+              <div>
+                <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+              </div>
+              Увеличить
             </div>
-            Увеличить
+            <img src="./assets/png/work3.png" alt="work3.png">
           </div>
-          <img src="./assets/png/work3.png" alt="work3.png">
         </div>
 
-        <div class="carousel-card">
-          <div class="carousel-card__action">
-            <div>
-              <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+        <div class="f-carousel__slide" data-fancybox="gallery" data-src="./assets/png/work4.png">
+          <div class="carousel-card">
+            <div class="carousel-card__action">
+              <div>
+                <img src="./assets/svg/magnify.svg" alt="magnify.svg">
+              </div>
+              Увеличить
             </div>
-            Увеличить
+            <img src="./assets/png/work4.png" alt="work4.png">
           </div>
-          <img src="./assets/png/work4.png" alt="work4.png">
         </div>
       </div>
 
@@ -396,9 +304,8 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
-    <section class="contacts-section">
+    <section id="contacts" class="contacts-section">
       <div class="content-wrapper contacts-section__content">
 
         <div class="contacts-desc">
@@ -416,20 +323,20 @@
           </div>
         </div>
 
-        <div class="sign-up-form">
+        <form id="signup-form" class="signup-form">
           <h3> Быстрая запись </h3>
-          <span class="font-medium sign-up-form__desc">
+          <span class="font-medium signup-form__desc">
             Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.
           </span>
-          <div class="sign-up-form__actions">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="+7 (___) ___-__-__">
-            <button class="sign-up-form__button"> Записаться </button>
+          <div class="signup-form__actions">
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="number" type="tel" placeholder="+7 (___) ___-__-__">
+            <button type="submit" class="signup-form__button"> Записаться </button>
           </div>
-          <span class="font-small sign-up-form__license">
+          <span class="font-small signup-form__license">
             Нажимая на кнопку вы соглашаетесь с <a href="#"> обработкой персональных данных </a>
           </span>
-        </div>
+        </form>
       </div>
     </section>
   </main>
@@ -442,25 +349,12 @@
           <a href="#"> Политика конфиденциальности </a>
         </div>
 
-        <nav>
-          <ul class="navigation-list">
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Услуги и цены </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Мастера </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Наши работы </a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="#" class="navigation-link"> Контакты </a>
-            </li>
-          </ul>
-        </nav>
+        <nav id="footer-navigation"></nav>
       </div>
     </div>
   </footer>
+
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>

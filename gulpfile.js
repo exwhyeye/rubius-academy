@@ -6,6 +6,8 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
+const webpackStream = require('webpack-stream');
+const rename = require('gulp-rename');
 
 function buildSass() {
   return src('src/scss/**/*.scss')
@@ -26,6 +28,15 @@ function buildSass() {
     .pipe(browserSync.stream());
 }
 
+function buildJS() {
+  return src('src/js/index.js')
+    .pipe(webpackStream(require('./webpack.config')))
+    .pipe(rename('main.min.js'))
+    .pipe(dest('src/js'))
+    .pipe(dest('dist/js'))
+    .pipe(browserSync.stream())
+}
+
 function buildHtml() {
   return src('src/**/*.html').pipe(dest('dist')).pipe(browserSync.stream())
 }
@@ -41,6 +52,7 @@ function cleanDist() {
 function serve() {
   watch('src/scss/**/*.scss', buildSass);
   watch('src/**/*.html', buildHtml);
+  watch(['src/js/**/*.js', '!src/js/**/*.min.js'], buildJS);
 }
 
 function createDevServer() {
@@ -55,5 +67,5 @@ exports.html = buildHtml;
 exports.assets = copy;
 exports.clean = cleanDist;
 
-exports.build = series(cleanDist, buildSass, buildHtml, copy);
-exports.default = series(buildSass, parallel(createDevServer, serve));
+exports.build = series(cleanDist, buildSass, buildJS, buildHtml, copy);
+exports.default = series(series(buildSass, buildJS), parallel(createDevServer, serve));
