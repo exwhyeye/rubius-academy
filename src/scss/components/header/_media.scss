@@ -13,10 +13,9 @@
     }
   }
 
-  .navigation-list__header {
+  #header-navigation .navigation-list {
     flex-direction: column;
     text-align: center;
-    gap: 0;
   }
 
   .navigation-link {
@@ -27,10 +26,6 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .header-top {
-    &__burger-container {
-      display: block;
-    }
-
     &__logo {
       font-size: 20px;
     }
@@ -38,6 +33,10 @@
     nav {
       display: none;
     }
+  }
+
+  .burger {
+    display: flex;
   }
 
   .header-content {

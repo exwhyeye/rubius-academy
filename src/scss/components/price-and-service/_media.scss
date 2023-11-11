@@ -1,29 +1,33 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1280px) {
-  .service-cards-container {
-    gap: 32px 0;
-    justify-content: space-between;
-  }
 
-  .service-card {
-    width: calc(50% - 25px);
+  .tabs-manager {
+
+    &__content {
+      gap: 32px 0;
+      justify-content: space-between;
+    }
+
+    &__content-item {
+      width: calc(50% - 25px);
+    }
   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .price-and-service-section {
-    .navigation-list {
-      justify-content: center;
-    }
+
+  .tabs-manager__links {
+    justify-content: center;
   }
 
-  .service-card {
-    &__desc {
+  .tabs-manager {
+
+    &__content-item-info {
       font-size: 12px;
     }
 
-    &__price {
+    &__content-item-price {
       font-size: 16px;
     }
   }
@@ -31,14 +35,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .service-card {
+
+  .tabs-manager__content-item {
     width: 100%;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .service-card {
+
+  .tabs-manager__content-item {
+
     &__price {
       font-size: 16px;
       font-weight: 600;

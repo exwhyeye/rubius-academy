@@ -26,20 +26,23 @@
   border-radius: 50%;
 }
 
-.carousel {
-  height: 372px;
+.f-carousel {
 
-  display: flex;
-  align-items: center;
-  // Св-во safe, насколько я понял, не во всех браузерах поддерживается
-  // Другого решения, чтобы нормально прокручивать карусель, найти не смог =(
-  justify-content: safe center;
-  overflow-x: auto;
-
-  gap: 0 30px;
   margin: 52px auto 116px auto;
 
-  text-align: center;
+  &__slide {
+    width: 372px;
+    height: 372px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Убрал footer у плагина fancybox
+.fancybox__footer {
+  display: none;
 }
 
 .carousel-card {
